@@ -1,7 +1,14 @@
 const express = require('express');
+const helmet = require('helmet');
+
 const app = express();
 
+// Use Helmet to secure Express app by setting various HTTP headers
+app.use(helmet());
 
+// Other app code goes here
+
+module.exports = app;
 
 
 
